@@ -17,27 +17,35 @@
       background-color:hsl(185, 75%, 39%);
       text-align: center;
       font-family: 'Kumbh Sans', sans-serif;  
+      height: 100%;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
     }
+    
     .background-img{
       position: absolute;
-      size: 100%;
     }
 
     .bot-container{
       margin-top: 20%;
       
     }
-    .attribution { font-size: 11px; text-align: center; bottom: 100%;}
+    .attribution {font-size: 11px; text-align: center; bottom: 100%;}
     .attribution a { color: hsl(228, 45%, 44%); }
+    
     .card-top-pattern{
       border-radius:15px 15px 0 0;
     }
+    
     .profile-card{
+      position: relative;
       background-color: white;
       border-radius: 20px;
       height: 400px;
-      margin: 50px auto;  
       width: 350px;
+      margin: 11% auto 20px auto;
+      top: 20%;
     }
     .profile-pic{
       position: absolute;
@@ -67,7 +75,8 @@
 <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
 <body>
-
+  <img style="position: absolute; right: 65% ; top: -35%; " src="/images/bg-pattern-top.svg" alt="">
+  <img style="position: absolute; left: 65% ;top: 50%;" src="/images/bg-pattern-bottom.svg" alt="">
   <div class="profile-card">
     <div class="top-img-container">
       <img class="card-top-pattern" src="/images/bg-pattern-card.svg" alt="card-top-pattern">
